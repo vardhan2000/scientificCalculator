@@ -7,15 +7,17 @@ pipeline {
     }
 
     stages {
-        stage('Build') {
+        stage('Git pull') {
             steps {
                 // Get some code from a GitHub repository
                 git 'https://github.com/vardhan2000/scientificCalculator.git'
-
+            }
+        }
+        stage('Build') {
+            steps {
                 // Run Maven on a Unix agent.
                 sh "mvn clean package"
             }
-
-        }
+        }    
     }
 }
