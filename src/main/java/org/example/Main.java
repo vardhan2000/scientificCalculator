@@ -16,6 +16,9 @@ public class Main {
     }
 
     static double factorial(int x) {
+        if(x==0) {
+            return 1;
+        }
         double fact=1;
         double t=x;
         while(t>0){
@@ -26,15 +29,15 @@ public class Main {
     }
 
     static double ln(double x) {
-        double t=x;
-        double log=0;
-        double e = 2.718281828459045;
-        while(t>1) {
-            t=t/e;
-            log+=1;
+        double res=0;
+        for (int i = 1; i <= 100; i++) {
+            double t = 1.0;
+            for (int j = 0; j < i; j++) {
+                t *= ((x - 1) / x);
+            }
+            res += (1 / (double)(i)) * t;
         }
-        log=log+t-1;
-        return log;
+        return res;
     }
 
     static double power(double x, int b) {
