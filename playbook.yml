@@ -9,4 +9,4 @@
       shell: docker pull av2000/scientific-calculator:latest
       
     - name: run container
-      shell: docker run -i -t --name scientificCalculator -d av2000/scientific-calculator
+      shell: docker run -i -t --name scientific-calculator -d av2000/scientific-calculator
