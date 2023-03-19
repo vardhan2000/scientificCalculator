@@ -9,7 +9,7 @@ pipeline {
     environment
     {
         registry = "av2000/scientific-calculator"
-        registryCredential = "sciCalc dockerhub access"
+        registryCredential = "sciCalc dockerhub repo access"
         dockerImage = ""
     }
 
