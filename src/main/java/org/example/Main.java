@@ -13,8 +13,8 @@ public class Main {
     }
     static double root(int x) {
         if(x < 0) {
-            logger.info("[SQUARE ROOT OPERATION] [FAILED] " + x);
-            logger.info("[RESULT: SQUARE ROOT] [INVALID INPUT] -1");
+            logger.info("[SQUARE_ROOT OPERATION] [FAILED] " + x);
+            logger.info("[SQUARE_ROOT OPERATION] [RESULT] -1");
             return -1;
         }
 
@@ -27,15 +27,15 @@ public class Main {
             sqrt=(t+(x/t))*0.5;
         }
 
-        logger.info("[SQUARE ROOT OPERATION] [SUCCESS] " + x);
-        logger.info("[RESULT: SQUARE ROOT] " + sqrt);
+        logger.info("[SQUARE_ROOT OPERATION] [SUCCESS] " + x);
+        logger.info("[SQUARE_ROOT OPERATION] [RESULT] " + sqrt);
         return sqrt;
     }
 
     static double factorial(int x) {
         if(x < 0) {
             logger.info("[FACTORIAL OPERATION] [FAILED] " + x);
-            logger.info("[RESULT: FACTORIAL] [INVALID INPUT] -1");
+            logger.info("[FACTORIAL OPERATION] [RESULT] -1");
             return -1;
         }
         if(x==0) {
@@ -49,14 +49,14 @@ public class Main {
         }
 
         logger.info("[FACTORIAL OPERATION] [SUCCESS] " + x);
-        logger.info("[RESULT: FACTORIAL] " + fact);
+        logger.info("[FACTORIAL OPERATION] [RESULT] " + fact);
         return fact;
     }
 
     static double ln(double x) {
         if(x <= 0) {
             logger.info("[LOGARITHM OPERATION] [FAILED] " + x);
-            logger.info("[RESULT: LOGARITHM] [INVALID INPUT] -1");
+            logger.info("[LOGARITHM OPERATION] [RESULT] -1");
             return -1;
         }
         double res=0;
@@ -69,14 +69,14 @@ public class Main {
         }
 
         logger.info("[LOGARITHM OPERATION] [SUCCESS] " + x);
-        logger.info("[RESULT: LOGARITHM] " + res);
+        logger.info("[LOGARITHM OPERATION] [RESULT] " + res);
         return res;
     }
 
     static double power(double x, int b) {
         if(x==0 && b==0) {
-            logger.info("[POWER OPERATION] [FAILED]");
-            logger.info("[RESULT: POWER] [INVALID INPUT] NaN");
+            logger.info("[POWER OPERATION] [FAILED] " + x);
+            logger.info("[POWER OPERATION] [RESULT] -1");
             return Double.NaN;
         }
         if(b==0) {
@@ -90,7 +90,7 @@ public class Main {
         }
 
         logger.info("[POWER OPERATION] [SUCCESS] " + x);
-        logger.info("[RESULT: POWER] " + t);
+        logger.info("[POWER OPERATION] [RESULT] " + t);
         return t;
     }
 
