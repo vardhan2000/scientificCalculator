@@ -1,2 +1,2 @@
 # scientificCalculator
-SPE mini-project
+SPE miniproject
