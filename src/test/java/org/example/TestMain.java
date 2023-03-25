@@ -36,9 +36,9 @@ public class TestMain {
     @Test
     public void factorialTruePositive()
     {
-        assertEquals("Factorial Test 1", 1, calc.factorial(1), DEL);
-        assertEquals("Factorial Test 2", 2, calc.factorial(2), DEL);
-        assertEquals("Factorial Test 3", -1, calc.factorial(-5), DEL);
+        assertEquals("Factorial Test 1", 6, calc.factorial(3), DEL);
+        assertEquals("Factorial Test 2", Double.POSITIVE_INFINITY, calc.factorial(999), DEL);
+        assertEquals("Factorial Test 3", 1, calc.factorial(0), DEL);
         assertEquals("Factorial Test 4", -1, calc.factorial(-10), DEL);
 
     }
