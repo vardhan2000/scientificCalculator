@@ -18,8 +18,8 @@ public class TestMain {
     {
         assertEquals("Root Test 1", 1, calc.root(1), DEL);
         assertEquals("Root Test 2", 1.41421356237, calc.root(2), DEL);
-        assertEquals("Root Test 3", 2, calc.root(4), DEL);
-        assertEquals("Root Test 4", 2.64575131106, calc.root(7), DEL);
+        assertEquals("Root Test 3", -1, calc.root(-4), DEL);
+        assertEquals("Root Test 4", -1, calc.root(-2), DEL);
 
     }
 
@@ -38,8 +38,8 @@ public class TestMain {
     {
         assertEquals("Factorial Test 1", 1, calc.factorial(1), DEL);
         assertEquals("Factorial Test 2", 2, calc.factorial(2), DEL);
-        assertEquals("Factorial Test 3", 120, calc.factorial(5), DEL);
-        assertEquals("Factorial Test 4", 3628800, calc.factorial(10), DEL);
+        assertEquals("Factorial Test 3", -1, calc.factorial(-5), DEL);
+        assertEquals("Factorial Test 4", -1, calc.factorial(-10), DEL);
 
     }
 
@@ -59,7 +59,7 @@ public class TestMain {
         assertEquals("ln Test 1", 0, calc.ln(1), DEL);
         assertEquals("ln Test 2", 0.69314718056, calc.ln(2), DEL);
         assertEquals("ln Test 3", 1.60943791243, calc.ln(5), DEL);
-        assertEquals("ln Test 4", 2.30258290599, calc.ln(10), DEL);
+        assertEquals("ln Test 4", -1, calc.ln(-10), DEL);
     }
 
 
